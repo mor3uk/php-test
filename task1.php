@@ -7,12 +7,12 @@
  */
 function search_category($categories, int $id)
 {
-  for ($i = 0; $i < count($categories); $i++) {
-    if ($id === $categories[$i]['id']) {
-      return $categories[$i]['title'];
+  foreach ($categories as $category) {
+    if ($id === $category['id']) {
+      return $category['title'];
     }
-    if ($categories[$i]['children']) {
-      $title = search_category($categories[$i]['children'], $id);
+    if ($category['children']) {
+      $title = search_category($category['children'], $id);
       if ($title) {
         return $title;
       }
