@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @param array $categories - The array of cattegories to search in.
+ * @param int $id - The id of the category to search.
+ * @return mixed the name of the searched category or false if not found.
+ */
 function search_category($categories, int $id)
 {
   for ($i = 0; $i < count($categories); $i++) {

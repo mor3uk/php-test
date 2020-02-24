@@ -1,4 +1,5 @@
 <?php
+
 require('./db.php');
 
 $sql = "CREATE TABLE people

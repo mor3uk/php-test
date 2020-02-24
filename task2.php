@@ -1,4 +1,5 @@
 <?php
+
 require('./dump.php');
 require('./db.php');
 

@@ -1,4 +1,5 @@
 <?php
+
 function dump($value)
 {
     echo '<pre>';
